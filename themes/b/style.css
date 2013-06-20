@@ -1,5 +1,96 @@
-body, h1, h2, h3, h4, h5 {
-  font-family: "Open Sans"; }
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans";}
+
+/*body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    line-height: 18px;
+}*/
+table {
+  margin: 10px 0 15px 0;
+  border-collapse: collapse;
+}
+td,th { 
+  border: 1px solid #ddd;
+  padding: 3px 10px;
+}
+th {
+  padding: 5px 10px;  
+}
+
+p {
+    margin-bottom: 9px;
+}
+
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family: georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left: -30px;
+    margin-top: -36px;
+    font-family:georgia,serif;
+    color:#ccc;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+    margin-top: 0;
+    color: #737373;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    /*padding: 14px;*/
+    margin: 0 0 18px;
+    line-height: 16px;
+    /*font-size: 14px;*/
+    /*border: 1px solid #d9d9d9;*/
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+/*    color:#737373;*/
+    font-size: 14px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+  body,code,pre code,h1,h2,h3,h4,h5,h6 {
+    color: black;
+  }
+  table, pre {
+    page-break-inside: avoid;
+  }
+}
 
 body {
   background-image: -webkit-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
@@ -11,7 +102,11 @@ body {
   background-repeat: no-repeat;
   padding: 20px;
   color: #404142;
-  font-size: 14px; }
+  font-size: 14px; 
+  font-family: "Open Sans";
+  font-weight: normal;
+  margin: 0;
+}
   body > header, body .content, body footer {
     background: #fff;
     margin: 0 auto;
@@ -19,30 +114,76 @@ body {
     padding: 30px;
     text-align: center; }
   body .content {
-    margin: 1px auto; }
+    margin: 1px auto; 
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    }
   body > header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
     body > header h1 {
-      color: #484949;
+      color: #484949;;
       font-size: 22px; }
   body > footer {
     border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; }
+    border-bottom-right-radius: 2px; 
+  }
+    
+  body > footer p {
+    color: #999;
+    font: 10px "Conv_Apple Chancery",'Poly',georgia,serif;
+    margin: 6px;
+    padding: 0;
+  }
+
+  span ,h2 ,p {
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+  }
+  
+  .browser_logo {
+    margin-top: 0;
+  }
+
+  .browser_logo span {
+    display: inline-block;
+    vertical-align: -0.2em;
+    border: none;
+    width: 1em;
+    height: 1em;
+    opacity: 0.4;
+  }
+
+  .icon-apple:hover {
+    color: #ccc;
+  }
+
+  .browser_logo span:hover {
+    color: #222;
+  }
 
 nav {
   margin-top: 30px; }
-  nav a {
-    padding: 8px 13px;
-    border-radius: 2px;
-    margin-right: 10px;
-    line-height: 1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 11px;
-    white-space: nowrap; }
-    nav a:last-child {
-      margin-right: 0; }
+
+
+nav a {
+  padding: 8px 0px;
+  border-radius: 2px;
+  margin: 10px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  white-space: nowrap; }
+  nav a:last-child {
+  margin-right: 0; 
+  }
+
+  nav a:hover {
+    color: #222;
+  }
 
 .description {
   color: #999; }
@@ -54,14 +195,23 @@ time {
 .posts li {
   margin-bottom: 10px; }
 .posts h2 {
-  margin: 0 0 3px 0;
-  font-weight: normal; }
+  margin: 0 0 3px 0; 
+  font-weight: normal;}
+
+.posts h2:hover {
+  color: #222;
+}
 
 .posts, article, aside {
   width: 100%;
   max-width: 500px;
   margin: auto;
-  text-align: left; }
+  text-align: left;
+}
+
+#social_logo span:hover {
+  color: #ccc;
+}
 
 .categories {
   position: relative; }
@@ -75,6 +225,42 @@ time {
     color: #d0d0d0;
     margin: 10px 0;
     font-weight: normal; }
+
+.muted span {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+.tags {
+  color: #345;
+}
+
+h3.tags {
+  font-size: 16px;
+  margin: 0 0 6px;
+  text-transform: capitalize;
+  color: #999;
+}
+
+h3.tags span {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+.tags_nav {
+  margin-bottom: 50px;
+}
+
+.tags_nav li, .tags_nav h2{
+  display: inline;
+  color: #345;
+  margin-left: 5px;
+}
+
+.tags_nav a span {
+  vertical-align: super;
+  font-size: 0.6em;
+}
 
 article header {
   padding-bottom: 15px;
@@ -91,11 +277,18 @@ aside {
   aside .avatar {
     width: 90px;
     float: left;
-    margin: 0 15px 0 0; }
+    margin: 0px 15px 0 0; }
   aside .recent-posts {
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd; }
+
+  aside .disqus {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
   aside .previous-post, aside .next-post {
     white-space: nowrap;
     max-width: 100%;
@@ -122,3 +315,45 @@ aside {
     content: "Next"; }
   aside p {
     margin: 0; }
+    
+  .caution {
+    font: 10px "Conv_Apple Chancery",'Poly',georgia,serif;
+    color: #ccc;
+    opacity: 0.4;
+  }
+  
+  .caution:hover {
+    color: #222;
+  }
+  
+  .email {
+    font: 10px "Conv_Apple Chancery",'Poly',georgia,serif;
+    color: #ccc;
+  }
+  
+  .email:hover {
+    color: #222;
+  }
+
+    /* Mobile Ver. */
+
+  @media screen and (max-width:720px) {
+    nav a {
+      margin: 0;
+    }
+    nav a span {
+      margin: 6px;
+      font-size: 25px;
+    }
+    #social_logo span{
+      font-size: 25px;
+    }
+    #social_logo a {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+    }
+    nav .icon-twitter {display: none; margin-right:  0;}
+    nav .icon-github-3 {display: none; margin-right: 0;}
+    nav .icon-instagram {display: none; margin-right: 0;}
+  }

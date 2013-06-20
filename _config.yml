@@ -1,6 +1,6 @@
-title:            Wardrobe
-description:      A jekyll wardrobe.
-url:              http://wardrobe.muan.co/
+title:            Avalon
+description:      A jekyll Blog
+url:              http://xhs.me/blog
 paginate:         10
 
 pygments:         true
@@ -11,26 +11,53 @@ rdiscount:
 
 # Theme specific settings
 theme:            b
-signoff:          Mu-An
+signoff:          xi4oh4o
 facebook_appid:   
 google_analytics: 
-disqus_shortname: 
+disqus_shortname: xhs
+
+base_path:        http://xhs.me/jekyll-wardrobe
 
 owner:
-  name:           Mu-An Chiou
-  avatar:         'https://secure.gravatar.com/avatar/afd3cc3e385d754183336c859d9e694a?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
-  bio:            'I design, code, make funny noises and live in London. I am very nice. Designer-dev looking for new opportunities, get in touch!'
+  name:           Howe Isamu
+  avatar:         'http://www.gravatar.com/avatar/fe0341da85d13073e94f92951b37d83d?size=200'
 
-links: 
+  bio:            "Hi,I'm Howe Isamu, aka xi4oh4o in elsewhere.
+I live in ZhengZhou and like Programming and front-end design.
+Nice to meet you!"
+
+links_a: 
   - name:         Home
-    url:          /
+    url:          http://xhs.me/blog/
   - name:         Categories
-    url:          /categories
+    url:          http://xhs.me/blog/categories/
+  - name:         Tags
+    url:          http://xhs.me/blog/tags/
+  - name:         Twitter
+    url:          https://twitter.com/XHs
+  - name:         Github
+    url:          https://github.com/xi4oh4o
+  - name:         Instagram
+    url:          http://instagram.com/xi4oh4o
   - name:         About
-    url:          /about
-  - name:         Blog
-    url:          http://muan.co
-  - name:         Email
-    url:          mailto:._.@muan.co
-  - name:         GitHub
-    url:          http://github.com/muan
+    url:          http://xhs.me/blog/about/
+  - name:         Feed
+    url:          http://xhs.me/blog/atom.xml
+
+links_b: 
+  - name:         <span class="icon-home-2"></span>
+    url:          http://xhs.me/blog/
+  - name:         <span class="icon-drawer-2"></span>
+    url:          http://xhs.me/blog/categories/
+  - name:         <span class="icon-tags"></span>
+    url:          http://xhs.me/blog/tags/
+  - name:         <span class="icon-twitter"></span>
+    url:          https://twitter.com/XHs
+  - name:         <span class="icon-github-3"></span>
+    url:          https://github.com/xi4oh4o
+  - name:         <span class="icon-instagram"></span>
+    url:          http://instagram.com/xi4oh4o
+  - name:         <span class="icon-profile"></span>
+    url:          http://xhs.me/blog/about/
+  - name:         <span class="icon-feed"></span>
+    url:          http://xhs.me/blog/atom.xml

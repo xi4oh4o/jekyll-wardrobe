@@ -1,5 +1,9 @@
 WebFontConfig = {
+<<<<<<< HEAD
   google: { families: [ 'PT Serif' ] }
+=======
+  google: { families: [ 'Open Sans' ] }
+>>>>>>> 646b45aabf7481bababc61833e97192b08a8addb
 };
 (function() {
   var wf = document.createElement('script');

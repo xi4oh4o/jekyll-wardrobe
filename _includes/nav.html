@@ -1,0 +1,12 @@
+{% if site.theme == "a" %}
+{% for link in site.links_a %}
+  <a target="_top" href="{{ link.url }}">{{ link.name }}</a>
+{% endfor %}
+
+{% else %}
+
+{% for link in site.links_b %}
+  <a target="_top" href="{{ link.url }}">{{ link.name }}</a>
+{% endfor %}
+
+{% endif %}
